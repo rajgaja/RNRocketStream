@@ -1,3 +1,8 @@
+0. Pushing ur changes:
+$ git add <file or directory>
+$ git commit
+$ git push origin master
+
 1. First time checkout
 
 $ git clone https://github.com/rajgaja/RNRocketStream.git
