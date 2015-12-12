@@ -1,25 +1,31 @@
 0. Pushing ur changes:
+
 $ git add <file or directory>
 $ git commit
 $ git push origin master
 
+
 1. First time checkout
 
 $ git clone https://github.com/rajgaja/RNRocketStream.git
+
 
 2. Add new files for commit
 
 $ git add <file>
 $ git add <directory>   #adds the files recursively
 
+
 3. Begin an interactive staging session that lets you choose portions of a file to add to the next commit. This will present you with a chunk of changes and prompt you for a command. Use y to stage the chunk, n to ignore the chunk, s to split it into smaller chunks, e to manually edit the chunk, and q to exit.
 
 $ git add -p
+
 
 4. Commit the added changes with message
 
 $ git commit -m '<MESSAGE>'
 $ git commit # it will open a text editor for inserting commit messages with multiple lines
+
 
 5. See the commit logs
 
@@ -38,7 +44,14 @@ $ git checkout master
 
 $ git revert <commit>
 
-8. Remove the uncommitted changes from the local registerComponent
+
+8. Remove the uncommitted changes from the local to remote
 
 $ git clean  # will not remove, just list
 $ git clean -f # will remove from the local
+
+
+9. Viewing diff between current code vs head
+
+$ git log --oneline <file path>
+$ git diff <commit_no> <file path>
