@@ -1,0 +1,4 @@
+
+2. First time checkedout build
+$ npm install
+$ react-native run-android
