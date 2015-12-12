@@ -1,0 +1,74 @@
+# OSX
+#
+.DS_Store
+
+# Xcode
+#
+build/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
+project.xcworkspace
+
+# Android/IJ
+#
+.idea
+.gradle
+local.properties
+
+# node.js
+#
+node_modules/
+npm-debug.log
+
+# Built application files
+*.apk
+*.ap_
+
+# Files for the Dalvik VM
+*.dex
+
+# Java class files
+*.class
+
+# Generated files
+bin/
+gen/
+
+# Gradle files
+.gradle/
+build/
+/*/build/
+
+# Log Files
+*.log
+
+# Keystore
+*.jks
+*.keystore
+
+# IDE
+.idea
+
+# Fabric
+fabric.properties
+com_crashlytics_export_strings.xml
+
+# Appvirality
+appvirality.properties
+
+# Built files
+index.android.bundle
+index.ios.bundle
