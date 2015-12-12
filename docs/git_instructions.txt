@@ -5,6 +5,10 @@ $ git commit
 $ git push origin master
 
 
+0.1. Checkout the changes from master
+
+$ git pull
+
 1. First time checkout
 
 $ git clone https://github.com/rajgaja/RNRocketStream.git
