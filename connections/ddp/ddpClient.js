@@ -3,7 +3,7 @@ let _ = require("underscore");
 
 let ddpClient = new DDPClient({
   // All properties optional, defaults shown
-  url: "ws://192.168.0.101:3000/websocket",
+  url: "ws://192.168.0.100:3000/websocket",
   port : 3000,
   ssl  : false,
   autoReconnect : true,

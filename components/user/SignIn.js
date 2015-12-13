@@ -29,24 +29,12 @@ var SignIn = React.createClass({
             user: false,
         };
     },
-    componentDidMount() {
-        ddpClient.initialize()
-        .then(() => {
-            return Accounts.signInWithToken();
-        })
-        .then((res) => {
-            console.log(" RECEIVED A CB ");
-            return this.setState({loaded: true});
-        })
-        .catch((err) => {
-            console.log(" RECEIVED A ERROR CB ");
-            return this.setState({loaded: true});
-        });
-    },
+
     componentWillMount() {
         Accounts.emitter.on('loggedIn', (userId) => {
             if (userId) {
                 console.log("USER LOGGED IN");
+                console.log("User ID == "+ userId);
                 this.setState({loggedIn: true});
             }
             else {
@@ -54,10 +42,9 @@ var SignIn = React.createClass({
             }
         });
     },
-    componentWillUnmount() {
-        ddpClient.close();
-    },
+
     _handlePress() {
+        this.props.navigator.push({id: 2,});
         let { email, password } = this.state;
         console.log('handle Pressed email '+email+' pass '+password);
         if (!email || !password) {

@@ -9,22 +9,22 @@ var {
   AppRegistry,
   StyleSheet,
   Text,
+  Navigator,
   View,
 } = React;
 
 // Polyfill the process functionality needed for minimongo-cache
 global.process = require("./connections/ddp/process.polyfill");
 
-let SignIn = require('./components/user/SignIn');
+let CompNav = require('./components/CompNav');
 
 var RNRocketStream = React.createClass({
-  render: function() {
-    return (
-      <View style={styles.container}>
-        <SignIn />
-      </View>
-    );
-  }
+
+    render() {
+      return (
+        <CompNav />
+      );
+    }
 });
 
 var styles = StyleSheet.create({
